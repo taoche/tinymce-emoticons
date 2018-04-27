@@ -1,0 +1,31 @@
+{
+  "name": "tinymce-emoticons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taoche/tinymce-emoticons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taoche/tinymce-emoticons/issues"
+  },
+  "homepage": "https://github.com/taoche/tinymce-emoticons#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "jimp": "^0.2.28",
+    "rollup": "^0.58.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}
