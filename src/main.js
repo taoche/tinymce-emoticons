@@ -2,7 +2,11 @@ import base64emoticons from './emoticons.json'
 
 const ROW = 7
 const COLUMNS = 15
-const base64emoticonsArr = Object.values(base64emoticons)
+
+const base64emoticonsArr = []
+for (let key in base64emoticons) {
+  base64emoticonsArr.push(base64emoticons[key])
+}
 
 tinymce.PluginManager.add('emoticons', editor => {
   function renderHtml() {

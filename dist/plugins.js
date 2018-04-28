@@ -216,7 +216,11 @@ var base64emoticons = {
 
 var ROW = 7;
 var COLUMNS = 15;
-var base64emoticonsArr = Object.values(base64emoticons);
+
+var base64emoticonsArr = [];
+for (var key in base64emoticons) {
+  base64emoticonsArr.push(base64emoticons[key]);
+}
 
 tinymce.PluginManager.add('emoticons', function (editor) {
   function renderHtml() {
